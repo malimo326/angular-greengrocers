@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CartService } from './cart.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-green-grocers';
+  constructor(private readonly cartService: CartService) {}
+
+  getTotal() {
+    return this.cartService.totalCost;
+  }
 }
