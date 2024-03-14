@@ -187,3 +187,29 @@ app-total {
     border-bottom: 2px solid #00675b;
   }
 }
+.filter {
+  display: grid;
+  gap: 1rem;
+  background-color: #808686;
+  border-radius: 24px;
+  padding: 2rem;
+
+}
+
+.filters {
+  justify-self: start;
+
+}
+
+.filters p, .sort p {
+  display: inline;
+  font-weight: bold;
+}
+
+.filters label, .sort label {
+  margin-left: 10px;
+}
+
+.sort {
+  justify-self: end;
+}
